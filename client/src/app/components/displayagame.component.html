@@ -1,0 +1,10 @@
+<div *ngIf="exist; else noData">
+  <p>
+    Game Id: <span>{{ chosengame.game_id }}</span>
+  </p>
+  <p>
+    Game Name: <span>{{ chosengame.name }}</span>
+  </p>
+  <img src="{{ chosengame.image }}" />
+</div>
+<ng-template #noData>{{ message }}</ng-template>

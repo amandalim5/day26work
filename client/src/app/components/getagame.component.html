@@ -1,0 +1,11 @@
+<form [formGroup]="getagameForm" (ngSubmit)="processForm()">
+  <table>
+    <tr>
+      <td>Game Id:</td>
+      <td><input type="text" size="30" formControlName="gid" /></td>
+    </tr>
+    <tr>
+      <td><button type="submit">Find Game</button></td>
+    </tr>
+  </table>
+</form>
